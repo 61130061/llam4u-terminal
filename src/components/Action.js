@@ -2,7 +2,7 @@ import { bootLog } from './BootLog';
 import { whoami } from './TextArt';
 
 const help = `
-This terminal can run many basic linux commands such as 'cd' and 'ls'. Every single command is built from scratch and it open-source! You can clone it from <a href='https://github.com/' target='_blank' class='font-bold text-yellow-500 hover:text-yellow-400 underline underline-offset-1 hover:underline-offset-2'>GitHub</a>.
+This terminal can run many basic linux commands such as 'cd' and 'ls'. Every single command is built from scratch and it open-source! You can clone it from <a href='https://github.com/61130061/llam4u-terminal' target='_blank' class='font-bold text-yellow-500 hover:text-yellow-400 underline underline-offset-1 hover:underline-offset-2'>GitHub</a>.
 \xa0
 <span>🔖 </span>There are <span class='font-bold'>3 shortcuts<span> for your to use:
 ├ tab (command prediction)
@@ -163,6 +163,77 @@ This is README.md file of this project.
 You can visit this project on <a class='underline underline-offset-1 hover:underline-offset-2 hover:text-blue-400' href='https://github.com/61130061/WEPINS'>https://github.com/61130061/WEPINS</a>
 `
 
+const catReadme = `
+# Llam4u Terminal
+\xa0
+Terminal style portfolio responsive website.
+\xa0
+> Llam4u | start on 2 Apr 2022
+\xa0
+Check out the website here.
+\xa0
+![Llam4u Terminal](./docs/screen_shot.png)
+\xa0
+I have been using terminal for a while since I started to learn coding.
+I decided to build my portfolio website as a terminal website as realistic as I can.
+This website was built with pure React JS and Tailwind CSS and of course it is responsive website.
+That means it work on mobile phone as well as.
+There is no picture on this website.  I am planning to add more command in the future but right there are some for you guys to play with.
+\xa0
+\xa0
+## Usage
+\xa0
+### Install
+Just clone and install it as you used to.
+'''bash
+clone 
+yarn install
+'''
+\xa0
+### Quick Start
+This is my portfolio website.
+If you familiar with linux command, you can full around as you want.
+If you not quite familiar with this kind of thing, you can follow the structure below to know me more.
+1. Type ``whoami`` and press enter! Read my profile.
+2. Type ``cd Projects``  and press enter to navigate to projects folder.
+3. Type ``open [file name]`` to open each of my project.
+4. Hire me.
+\xa0
+Isn't it that simple?
+\xa0
+### Command
+On the website there are several commands that you can play with.
+I'm planning to add more in the future.
+- help
+- whoami
+- cat
+- open
+- ls
+- clear
+- cd
+\xa0
+### Shortcut
+This is all essential shortcuts that you can use to make your life more easier.
+- tab
+- crtl + L
+- crtl + c
+\xa0
+## TODO List
+- [ ] Navigate function through multiple folder (ex. open ~/Projects/DockBar.git)
+- [ ] Theme color setting
+- [ ] bye command
+\xa0
+## Contributing
+Feel free to pull requests or log issues as you please.
+\xa0
+Help me make it more realistic!
+\xa0
+\xa0
+This is README.md file of this project.
+You can visit this project on <a class='underline underline-offset-1 hover:underline-offset-2 hover:text-blue-400' href='https://github.com/61130061/llam4u-terminal'>https://github.com/61130061/llam4u-terminal</a>
+
+`
+
 const usageCat = `
 You can use 'cat' to read what inside the file.
 usage: cat [filename]
@@ -225,6 +296,10 @@ export function getResult (showCommand) {
          return whoami;
       case 'whoami error':
          return `usage: whoami`.split(/\r?\n/);
+      case 'cat README.md':
+         return catReadme.split(/\r?\n/);
+      case 'cat boot.log':
+         return bootLog.split(/\r?\n/);
       case 'cat boot.log':
          return bootLog.split(/\r?\n/);
       case 'cat directory':

@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: 'UbuntuMono';
+   src: url(./fonts/UbuntuMono-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: UbuntuMono;
+  background-color: #000000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+input {
+   caret-color: black;
+   color: black;
+   background-color: #ffffff;
+   width: 0px;
+   height: 0px;
+}
+*/
+
+.ok-text {
+   width: 80px;
+   text-align: center;
+   font-weight: 700;
+}
+
+.dot {
+   height: 10px;
+   width: 10px;
+   background-color: white;
+   border-radius: 20%;
+   box-shadow: 0 0 5px white;
+   margin: 1px;
+   margin-top: 5px;
+}
+.dot:nth-child(1) {
+   animation: fill 1s infinite ease;
+}
+.dot:nth-child(2) {
+   animation: fill 1s 0.2s infinite ease;
+}
+.dot:nth-child(3) {
+   animation: fill 1s 0.4s infinite ease;
+}
+.dot:nth-child(4) {
+   animation: fill 1s 0.6s infinite ease;
+}
+.dot:nth-child(5) {
+   animation: fill 1s 0.8s infinite ease;
+}
+
+
+@keyframes fill {
+   from, 5% {
+      background-color: white;
+   }
+   10%, 60% {
+      background-color: #dd4814;
+      box-shadow: 0 0 5px #dd4814;
+      opacity: 1;
+   }
+   65%, to {
+      background-color: white;
+   }
+}
+
+.neon:hover {
+   text-shadow: 0 0 5px #fff,
+   0 0 10px #fff, 
+   0 0 20px #fff;
+}
+
+.hilight {
+   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fef08a 50%);
+   background-position: -0% 0;
+   background-size: 200% auto;
+   transition: background-position 0.5s ease-out;
+   font-weight: 700;
+}
+
+.hilight:hover {
+   background-position: -99.99% 0;
+   font-weight: 800;
+   color: #374151;
+}
+
+
+@keyframes flickerAnimation {
+   0%   { opacity:1; }
+   50%  { opacity:0; }
+   100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+   0%   { opacity:1; }
+   50%  { opacity:0; }
+   100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+   0%   { opacity:1; }
+   50%  { opacity:0; }
+   100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+   0%   { opacity:1; }
+   50%  { opacity:0; }
+   100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
+}

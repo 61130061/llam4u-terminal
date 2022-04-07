@@ -4,7 +4,7 @@ Terminal style portfolio responsive website.
 
 > Llam4u | start on 2 Apr 2022
 
-Check out the website here.
+Check out the website [here](https://61130061.github.io/llam4u-terminal/).
 
 ![Llam4u Terminal](./docs/screen_shot.png)
 

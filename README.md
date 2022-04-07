@@ -21,7 +21,7 @@ I am planning to add more command in the future but right there are some for you
 ### Install
 Just clone and install it as you used to.
 ```bash
-clone 
+git clone https://github.com/61130061/llam4u-terminal.git
 yarn install
 ```
 

@@ -194,9 +194,9 @@ yarn install
 This is my portfolio website.
 If you familiar with linux command, you can full around as you want.
 If you not quite familiar with this kind of thing, you can follow the structure below to know me more.
-1. Type ``whoami`` and press enter! Read my profile.
-2. Type ``cd Projects``  and press enter to navigate to projects folder.
-3. Type ``open [file name]`` to open each of my project.
+1. Type ''whoami'' and press enter! Read my profile.
+2. Type ''cd Projects''  and press enter to navigate to projects folder.
+3. Type ''open [file name]'' to open each of my project.
 4. Hire me.
 \xa0
 Isn't it that simple?

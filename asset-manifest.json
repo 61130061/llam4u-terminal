@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/llam4u-terminal/static/css/main.a65035fe.css",
-    "main.js": "/llam4u-terminal/static/js/main.a68485bb.js",
+    "main.js": "/llam4u-terminal/static/js/main.c9f30a6e.js",
     "static/js/787.85105fe3.chunk.js": "/llam4u-terminal/static/js/787.85105fe3.chunk.js",
     "static/media/UbuntuMono-Regular.ttf": "/llam4u-terminal/static/media/UbuntuMono-Regular.9fa7d55c51063608f793.ttf",
     "index.html": "/llam4u-terminal/index.html",
     "main.a65035fe.css.map": "/llam4u-terminal/static/css/main.a65035fe.css.map",
-    "main.a68485bb.js.map": "/llam4u-terminal/static/js/main.a68485bb.js.map",
+    "main.c9f30a6e.js.map": "/llam4u-terminal/static/js/main.c9f30a6e.js.map",
     "787.85105fe3.chunk.js.map": "/llam4u-terminal/static/js/787.85105fe3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a65035fe.css",
-    "static/js/main.a68485bb.js"
+    "static/js/main.c9f30a6e.js"
   ]
 }

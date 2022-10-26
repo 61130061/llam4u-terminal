@@ -170,8 +170,10 @@ function Command ({ setDark }) {
                   const arg1 = input.join('').split('\xa0')[1];
                   if (arg1 == 'dark') {
                      setDark(true);
+                     showCommand.push('nothing');
                   } else if (arg1 == 'light') {
                      setDark(false);
+                     showCommand.push('nothing');
                   } else {
                      showCommand.push('usage', 'theme');
                   }

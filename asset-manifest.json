@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/llam4u-terminal/static/css/main.65b2c212.css",
-    "main.js": "/llam4u-terminal/static/js/main.519d0358.js",
+    "main.css": "/llam4u-terminal/static/css/main.506ee269.css",
+    "main.js": "/llam4u-terminal/static/js/main.c4e80d5c.js",
     "static/media/UbuntuMono-Regular.ttf": "/llam4u-terminal/static/media/UbuntuMono-Regular.9fa7d55c51063608f793.ttf",
-    "static/media/whoami.txt": "/llam4u-terminal/static/media/whoami.000f52f51100c931bd8c.txt",
+    "static/media/whoami.txt": "/llam4u-terminal/static/media/whoami.a63b0638727814982bc0.txt",
     "static/media/boot_log.txt": "/llam4u-terminal/static/media/boot_log.e2a127b1dcfdc709c6d3.txt",
     "index.html": "/llam4u-terminal/index.html",
-    "main.65b2c212.css.map": "/llam4u-terminal/static/css/main.65b2c212.css.map",
-    "main.519d0358.js.map": "/llam4u-terminal/static/js/main.519d0358.js.map"
+    "main.506ee269.css.map": "/llam4u-terminal/static/css/main.506ee269.css.map",
+    "main.c4e80d5c.js.map": "/llam4u-terminal/static/js/main.c4e80d5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.65b2c212.css",
-    "static/js/main.519d0358.js"
+    "static/css/main.506ee269.css",
+    "static/js/main.c4e80d5c.js"
   ]
 }

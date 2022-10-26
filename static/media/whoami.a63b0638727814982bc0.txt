@@ -137,7 +137,7 @@ Llam4u is a web developer and research engineer making impossible thing for the 
 │                             │
 ╰-────────────────────────────╯
  
-                 More on <a href='https://github.com/61130061' target='_blank' class='font-bold text-slate-100 hover:text-white underline underline-offset-1 hover:underline-offset-2'>Github</a> and <a href='https://codepen.io/61130061' target='_blank' class='font-bold text-slate-100 hover:text-white underline underline-offset-1 hover:underline-offset-2'>Codepen.io</a>
+                 More on <a href='https://github.com/61130061' target='_blank' class='font-bold text-slate-800 hover:text-black dark:text-slate-100 dark:hover:text-white underline underline-offset-1 hover:underline-offset-2'>Github</a> and <a href='https://codepen.io/61130061' target='_blank' class='font-bold text-slate-800 hover:text-black dark:text-slate-100 dark:hover:text-white underline underline-offset-1 hover:underline-offset-2'>Codepen.io</a>
  
  
                         ╭────────────╮

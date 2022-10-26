@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Delayed from './Delayed';
-import { bootLog } from './BootLog';
+import bootLogTxt from '../contents/boot_log.txt';
 
 function Status ({ loadTime }) {
    const [isLoading, setLoading] = useState(true);
@@ -32,8 +32,13 @@ function Status ({ loadTime }) {
 }
 
 function Boot ({ setBoot }) {
-   const bootArr = bootLog.split(/\r?\n/);
+   const [bootArr, setBootArr] = useState([]);
+   //const bootArr = bootLog.split(/\r?\n/);
    const bottomRef = useRef();
+
+   useEffect(() => {
+      fetch(bootLogTxt).then(res => res.text()).then(data => setBootArr(`${data}`.split(/\r?\n/)));
+   }, []);
 
    return(
       <div>

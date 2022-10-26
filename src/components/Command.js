@@ -65,7 +65,7 @@ function Command () {
       window.scrollTo(x, y);
    }
 
-   const handleKeyPress = (e) => {
+   const handleKeyPress = async (e) => {
       const mainInput = input.join('').split('\xa0')[0];
       var delayLoading = 0;
       var isResize = false;
@@ -171,13 +171,14 @@ function Command () {
          if (mainInput === 'clear') {
             setHistory([]);
          } else {
+            const result = await getResult(showCommand);
             setHistory([...history, {
                input: input,
                directory: directory,
                delay: delayLoading,
                isLogFile: isLogFile,
                isResize: isResize,
-               result: getResult(showCommand)
+               result
             }]);
          }
          setRunning(false);
@@ -266,12 +267,12 @@ function Command () {
       <div>
          {welcome.map((item, index) => 
          <Delayed key={index} waitBeforeShow={50*(index+1)} start={index === 0 ? true:false} last={index === welcome.length-1 ? true:false} setRunning={setRunning} bottomRef={bottomRef}>
-            <pre className='sm:text-[16px] sm:leading-[18px] text-[10px] leading-[12px]' dangerouslySetInnerHTML={{ __html: item }} />
+            <pre className='whitespace-pre-wrap sm:text-[16px] sm:leading-[18px] text-[10px] leading-[12px]' dangerouslySetInnerHTML={{ __html: item }} />
          </Delayed>
          )}
          {help.map((item, index) => 
          <Delayed key={index} waitBeforeShow={50*(welcome.length+index+1)} start={index === 0 ? true:false} last={index === help.length-1 ? true:false} setRunning={setRunning} bottomRef={bottomRef}>
-            <pre className='whitespace-pre-line' dangerouslySetInnerHTML={{ __html: item }} />
+            <pre className='whitespace-pre-wrap' dangerouslySetInnerHTML={{ __html: item }} />
          </Delayed>
          )}
          {history.map((item, index) => 

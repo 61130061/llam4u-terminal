@@ -38,7 +38,7 @@ function getFiles (target) {
 }
 
 
-function Command () {
+function Command ({ setDark }) {
    const refInput = useRef();
    const [input, setInput] = useState([]);
    const [selectIndex, setSelectIndex] = useState(input.length);
@@ -165,6 +165,20 @@ function Command () {
                   showCommand.push('usage', 'open');
                }
                break;
+            case 'theme':
+               if (input.join('').split('\xa0').length > 1) {
+                  const arg1 = input.join('').split('\xa0')[1];
+                  if (arg1 == 'dark') {
+                     setDark(true);
+                  } else if (arg1 == 'light') {
+                     setDark(false);
+                  } else {
+                     showCommand.push('usage', 'theme');
+                  }
+               } else {
+                  showCommand.push('usage', 'theme');
+               }
+               break
             default:
                showCommand.push('not found', mainInput);
          }

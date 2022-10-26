@@ -3,12 +3,12 @@ import whoamiTxt from '../contents/whoami.txt';
 
 const help = `
 This terminal can run many basic linux commands such as 'cd' and 'ls'. Every single command is built from scratch and it open-source! You can clone it from <a href='https://github.com/61130061/llam4u-terminal' target='_blank' class='font-bold text-yellow-500 hover:text-yellow-400 underline underline-offset-1 hover:underline-offset-2'>GitHub</a>.
-
+ 
 <span>🔖 </span>There are <span class='font-bold'>3 shortcuts<span> for your to use:
 ├ tab (command prediction)
 ├ crtl + L (clear termial)
 └ crtl + C (clear input section without running the command)
-
+ 
 <span>📬 </span>There are <span class='font-bold'>7 commands<span> that you can use:
 ├ help
 ├ whoami
@@ -16,7 +16,8 @@ This terminal can run many basic linux commands such as 'cd' and 'ls'. Every sin
 ├ open
 ├ ls
 ├ clear 
-└ cd 
+├ cd
+└ theme
 `
 
 export const commandsArr = ['help', 'whoami', 'cat', 'open', 'ls', 'clear', 'cd']
@@ -276,6 +277,8 @@ export function getResult (showCommand) {
                return usageCat.split(/\r?\n/);
             case 'open':
                return usageOpen.split(/\r?\n/);
+            case 'theme':
+               return `You can use 'open' to open link in the file. \nusage: theme [dark|light]`.split(/\r?\n/);
          }
       case 'open not available':
          return `open: The file ${showCommand[1]} cannot be opened right now (you may use <span class='font-bold text-blue-500'>cat</span> to read what inside a file)`.split(/\r?\n/);
@@ -320,6 +323,8 @@ export function getResult (showCommand) {
          return `cd: not a directory: ${showCommand[1]}`.split(/\r?\n/);
       case 'not found':
          return `zsh: command not found: ${showCommand[1]}`.split(/\r?\n/);
+      case 'theme':
+         return `You can use 'open' to open link in the file. \nusage: theme [dark|light]`.split(/\r?\n/);
       case 'nothing':
          return [];
       default:

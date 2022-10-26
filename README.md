@@ -46,6 +46,7 @@ I'm planning to add more in the future.
 - ls
 - clear
 - cd
+- theme (toggle dark mode)
 
 ### Shortcut
 This is all essential shortcuts that you can use to make your life more easier.
@@ -54,11 +55,11 @@ This is all essential shortcuts that you can use to make your life more easier.
 - crtl + c
 
 ## TODO List
+- [x] Theme color setting
 - [ ] Navigate function through multiple folder (ex. open ~/Projects/DockBar.git)
-- [ ] Theme color setting
 - [ ] bye command
 
 ## Contributing
-Feel free to pull requests or log issues as you please.
+Feel free to pull requests or open issues as you please.
 
 Help me make it more realistic!

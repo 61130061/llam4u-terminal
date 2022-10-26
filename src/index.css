@@ -8,14 +8,18 @@
 }
 
 body {
-  margin: 0;
-  font-family: UbuntuMono;
-  background-color: #000000;
+   margin: 0;
+   font-family: UbuntuMono;
+   background-color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+html.dark > body {
+   background-color: #000000;
 }
 
 /*
@@ -43,45 +47,56 @@ input {
    margin: 1px;
    margin-top: 5px;
 }
+
 .dot:nth-child(1) {
    animation: fill 1s infinite ease;
 }
+
 .dot:nth-child(2) {
    animation: fill 1s 0.2s infinite ease;
 }
+
 .dot:nth-child(3) {
    animation: fill 1s 0.4s infinite ease;
 }
+
 .dot:nth-child(4) {
    animation: fill 1s 0.6s infinite ease;
 }
+
 .dot:nth-child(5) {
    animation: fill 1s 0.8s infinite ease;
 }
 
 
 @keyframes fill {
-   from, 5% {
+
+   from,
+   5% {
       background-color: white;
    }
-   10%, 60% {
+
+   10%,
+   60% {
       background-color: #dd4814;
       box-shadow: 0 0 5px #dd4814;
       opacity: 1;
    }
-   65%, to {
+
+   65%,
+   to {
       background-color: white;
    }
 }
 
 .neon:hover {
    text-shadow: 0 0 5px #fff,
-   0 0 10px #fff, 
-   0 0 20px #fff;
+      0 0 10px #fff,
+      0 0 20px #fff;
 }
 
 .hilight {
-   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #fef08a 50%);
+   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fef08a 50%);
    background-position: -0% 0;
    background-size: 200% auto;
    transition: background-position 0.5s ease-out;
@@ -96,25 +111,61 @@ input {
 
 
 @keyframes flickerAnimation {
-   0%   { opacity:1; }
-   50%  { opacity:0; }
-   100% { opacity:1; }
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
-@-o-keyframes flickerAnimation{
-   0%   { opacity:1; }
-   50%  { opacity:0; }
-   100% { opacity:1; }
+
+@-o-keyframes flickerAnimation {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
-@-moz-keyframes flickerAnimation{
-   0%   { opacity:1; }
-   50%  { opacity:0; }
-   100% { opacity:1; }
+
+@-moz-keyframes flickerAnimation {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
-@-webkit-keyframes flickerAnimation{
-   0%   { opacity:1; }
-   50%  { opacity:0; }
-   100% { opacity:1; }
+
+@-webkit-keyframes flickerAnimation {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
+
 .animate-flicker {
    -webkit-animation: flickerAnimation 1s infinite;
    -moz-animation: flickerAnimation 1s infinite;

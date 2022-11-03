@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/llam4u-terminal/static/css/main.506ee269.css",
-    "main.js": "/llam4u-terminal/static/js/main.c4e80d5c.js",
+    "main.js": "/llam4u-terminal/static/js/main.485df771.js",
     "static/media/UbuntuMono-Regular.ttf": "/llam4u-terminal/static/media/UbuntuMono-Regular.9fa7d55c51063608f793.ttf",
-    "static/media/whoami.txt": "/llam4u-terminal/static/media/whoami.a63b0638727814982bc0.txt",
+    "static/media/whoami.txt": "/llam4u-terminal/static/media/whoami.0749404bb2281ba05e89.txt",
     "static/media/boot_log.txt": "/llam4u-terminal/static/media/boot_log.e2a127b1dcfdc709c6d3.txt",
     "index.html": "/llam4u-terminal/index.html",
     "main.506ee269.css.map": "/llam4u-terminal/static/css/main.506ee269.css.map",
-    "main.c4e80d5c.js.map": "/llam4u-terminal/static/js/main.c4e80d5c.js.map"
+    "main.485df771.js.map": "/llam4u-terminal/static/js/main.485df771.js.map"
   },
   "entrypoints": [
     "static/css/main.506ee269.css",
-    "static/js/main.c4e80d5c.js"
+    "static/js/main.485df771.js"
   ]
 }

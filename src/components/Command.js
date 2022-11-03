@@ -39,16 +39,16 @@ function getFiles (target) {
 
 
 function Command ({ setDark }) {
-   const refInput = useRef();
    const [input, setInput] = useState([]);
    const [selectIndex, setSelectIndex] = useState(input.length);
    const [history, setHistory] = useState([]);
-   const bottomRef = useRef(null);
    const [directory, setDirectory] = useState(['~']);
-   const [isInputFocus, setInputFocus] = useState(false);
-   const [isPageFocus, setPageFocus] = useState(false);
    const [isRunning, setRunning] = useState(false);
    const [inputComplete, setInputComplete] = useState(commandsArr);
+   const [prevCom, setPrevCom] = useState([]);
+
+   const refInput = useRef();
+   const bottomRef = useRef(null);
 
    const scrollToBottom = () => {
       bottomRef.current?.scrollIntoView();
@@ -229,6 +229,8 @@ function Command ({ setDark }) {
          if (selectIndex > 0) {
             setSelectIndex(selectIndex-1);
          }
+      } else if (e.keyCode === 38) { // Arrow up
+         // Select previous command
       } else if (e.keyCode === 39) {
          if (selectIndex < input.length) {
             setSelectIndex(selectIndex+1);
@@ -255,7 +257,6 @@ function Command ({ setDark }) {
             }
             setInput([...inputComplete[completeIndex+1].split('')]);
             setSelectIndex(inputComplete[completeIndex+1].split('').length);
-            console.log(inputComplete);
          } else {
             var filter = [];
             if (input.length === 0) {

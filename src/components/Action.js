@@ -20,7 +20,7 @@ This terminal can run many basic linux commands such as 'cd' and 'ls'. Every sin
 └ theme
 `
 
-export const commandsArr = ['help', 'whoami', 'cat', 'open', 'ls', 'clear', 'cd']
+export const commandsArr = ['help', 'whoami', 'cat', 'open', 'ls', 'clear', 'cd', 'theme']
 
 const bye = `
 

@@ -43,7 +43,7 @@ function Boot ({ setBoot }) {
    return(
       <div>
          {bootArr.map((item, index) => 
-         <Delayed setRunning={setBoot} last={index === bootArr.length-1 ? true:false} waitBeforeShow={index === 0 ? 0 : (index === bootArr.length-1 ? 3000+5000 + 30*(index+1) : 3000 + 30*(index+1))} bottomRef={bottomRef}>
+         <Delayed key={index} setRunning={setBoot} last={index === bootArr.length-1 ? true:false} waitBeforeShow={index === 0 ? 0 : (index === bootArr.length-1 ? 3000+5000 + 30*(index+1) : 3000 + 30*(index+1))} bottomRef={bottomRef}>
             <div key={index} className='flex'>
                <Status loadTime={index === 0 ? 3000 : 0} />
                <pre className='whitespace-pre-line' dangerouslySetInnerHTML={{ __html: item }} />
